@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-// Calling the URL extactor
+// Calling the URL extractor
 func crawl(url string) []string {
 	list, err := links.ExtractUrls(url)
 	if err != nil {
@@ -18,7 +18,6 @@ func crawl(url string) []string {
 }
 
 func main() {
-	log.Print("Hello World! Starting a Web crawler project")
 
 	log.Print("Crawling the below links.....")
 	for _, link := range os.Args[1:] {
